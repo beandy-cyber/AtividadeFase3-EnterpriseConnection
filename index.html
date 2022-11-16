@@ -1,121 +1,290 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+	<title>Traveller</title>
+</head>
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <title>Traveller</title>
-  </head>
-  <body>
-
-    <!-- Header Start -->
-    <header class="header d-flex align-items-center fixed-top bg-light">
-      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-        <a class="logo d-flex align-items-center" href="#">Traveller</a>
-      <!-- Nav Start -->
-        <nav class="navbar navbar-expand-lg d-flex align-items-center fixed-top">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      <!-- Nav Start -->
-      </div>
-    </header>
-    <!-- Header End -->
-
-    <!-- Main Content Starts -->
-    <main>
-      <div class="container">
-        <div class="menu-content d-flex align-items-center">
-            <button type="button" class="button-borda-left btn btn-light row">Como chegar</button>
-            <button type="button" class="btn btn-light">Dicas úteis</button>
-            <button type="button" class="btn btn-light">Hospedagem</button>
-            <button type="button" class="btn btn-light">História</button>
-            <button type="button" class="button-borda-right btn btn-light">Cultura</button>
-        </div>
-        <div class="menu-content d-flex align-items-center">
-            <button type="button" class="button-borda-left btn btn-light">Parques</button>
-            <button type="button" class="btn btn-light">Gastronomia</button>
-            <button type="button" class="btn btn-light">Vida noturna</button>
-            <button type="button" class="btn btn-light">Entretenimento</button>
-            <button type="button" class="button-borda-right btn btn-light" id="button-10">Aluguel de veículos</button>
-        </div>
-      </div>
-      <!-- Home Image Start -->
-      <section id="home-image" class="container my-4 p-4">
-        <div class="embed-responsive embed-responsive-21by9">
-          <figure>
-            <img class="img-fluid rounded  embed-responsive-item" src="https://i.imgur.com/BmWXkgF.jpeg" alt="">
-          </figure>
-          <!-- Search Bar -->
-          <div class="container input-group col-md-4 d-flex align-items-center bg-trasp">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" class="form-control" id="text0" placeholder="Email">
-          </div>
-        </div>
-      </section>
-      <!-- Cards -->
+<body>
+	<!-- Header Start -->
+	<header class="header d-flex align-items-center fixed-top">
+		<div class="container-fluid container-xl d-flex align-items-center justify-content-between"> <a class="logo d-flex align-items-center" href="#">Traveller</a>
+			<!-- Nav Start -->
+			<nav class="navbar navbar-expand-lg d-flex align-items-center fixed-top">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"> <a class="nav-link" href="#">Perfil</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="#">Favoritos</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="#">Alertas</a> </li>
+						<li class="nav-item"> <a class="login nav-link" href="#">Login</a> </li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Nav Start -->
+		</div>
+	</header>
+	<!-- Header End -->
+	<!-- Main Content Starts -->
+	<main>
+		<div class="container">
+			<div class="menu-content d-flex align-items-center">
+				<button type="button" class="button-borda-left btn btn-light row">Como chegar</button>
+				<button type="button" class="btn btn-light">Dicas úteis</button>
+				<button type="button" class="btn btn-light">Hospedagem</button>
+				<button type="button" class="btn btn-light">História</button>
+				<button type="button" class="button-borda-right btn btn-light">Cultura</button>
+			</div>
+			<div class="menu-content d-flex align-items-center">
+				<button type="button" class="button-borda-left btn btn-light">Parques</button>
+				<button type="button" class="btn btn-light">Gastronomia</button>
+				<button type="button" class="btn btn-light">Vida noturna</button>
+				<button type="button" class="btn btn-light">Entretenimento</button>
+				<button type="button" class="button-borda-right btn btn-light" id="button-10">Aluguel de veículos</button>
+			</div>
+		</div>
+		<!-- Home Image Start -->
+		<section id="home-image" class="container">
+			<div class="embed-responsive embed-responsive-21by9">
+				<figure> <img class="img-fluid rounded  embed-responsive-item" src="https://i.imgur.com/BmWXkgF.jpeg" alt="Ilustração de uma ilha"> </figure>
+			</div>
+		</section>
+		<!-- Home Image Ends -->
+		<!-- Cards -->
+		<article>
+			<!-- Title Section Starts -->
+			<div class="title-text container">
+				<h3>Cidades mais pesquisadas</h3>
+				<h4>Os destinos mais apreciados do país</h4> </div>
+			<!-- Title Section Ends -->
+			<!-- Cards Section Starts -->
+			<section class="container d-flex align-items-center ">
+				<div class="card"> <img src="image/photo0jpg.jpg" alt="Imagem de Ribeirão Preto" class="card-img-top">
+					<div class=”card-body”>
+						<h5 class=”card-title”>Ribeirão Preto</h5> </div>
+				</div>
+				<div class="card"> <img alt="Imagem de Campos do Jordão" src="image/campos-do-jordao.jpg" class="card-img-top" />
+					<div class=”card-body”>
+						<h5 class=”card-title”>Campos do Jordão</h5> </div>
+				</div>
+				<div class="card"> <img src="image/ipanema.jpg" alt="Imagem do Rio de Janeiro" class="card-img-top">
+					<div class=”card-body”>
+						<h5 class=”card-title”>Rio de Janeiro</h5> </div>
+				</div>
+				<div class="card"> <img src="image/pedreira-do-chapadao.jpg" alt="Imagem de Campinas" class="card-img-top">
+					<div class=”card-body”>
+						<h5 class=”card-title”>Campinas</h5> </div>
+				</div>
+			</section>
+			<article>
+				<!-- Title Section Starts -->
+				<div class="title-text container">
+					<h3>Em alta!</h3>
+					<h4>Conheça as atrações ideais da temporada</h4> </div>
+				<!-- Title Section Ends -->
+				<section class="container d-flex align-items-center">
+					<div class="card"> <img src="image/arraial-do-cabo.jpg" class="card-img-top" alt="Imagem de Arraial do Cabo">
+						<div class=”card-body”>
+							<h5 class=”card-title”>Excursão no Arraial do Cabo</h5> </div>
+					</div>
+					<div class="card"> <img alt="Imagem de uma praia em Porto de Galinhas" src="image/praia-dos-carneiros.jpg" class="card-img-top" />
+						<div class=”card-body”>
+							<h5 class=”card-title”>Praia dos Carneiros</h5> </div>
+					</div>
+					<div class="card"> <img src="image/prainha-beach.jpg" class="card-img-top rounded" alt="Imagem de uma praia no Rio de Janeiro">
+						<div class=”card-body”>
+							<h5 class=”card-title”>Prainha Beach</h5> </div>
+					</div>
+					<div class="card"> <img src="image/excursão-museu.jpg" class="card-img-top rounded" alt="Imagem da entrada de um Museu">
+						<div class=”card-body”>
+							<h5 class=”card-title”>Excursão em museus de SP</h5> </div>
+					</div>
+				</section>
+			</article>
+			<article class="dicas" style="background-color: #fade6496;">
+				<!-- Title Section Starts -->
+				<div class="title-text container">
+					<h2>Dicas para melhorar sua viagem</h2> </div>
+				<!-- Title Section Ends -->
+				<section class="container d-flex align-items-center">
+					<div class="card"> <img alt="Imagem de uma praia" src="image/praia-e-mar_74190-2371.webp" class="card-img-top " />
+						<div class="card-body">
+							<h5 class="card-title">Descubra praias paradisíacas</h5> </div>
+					</div>
+					<div class="card"> <img src="image/silhueta-de-montanhas-com-belas-paisagens-do-por-do-sol_181624-18644.jpg" class="card-img-top " alt="Imagem de montanhas ao amanhecer">
+						<div class="card-body">
+							<h5 class="card-title">Para amantes de escalada!</h5> </div>
+					</div>
+					<div class="card"> <img src="image/grande-plano-de-garrafas-e-copos-no-armario-de-exibicao-em-um-bar-no-scandic-hotel-em-copenhague-dinamarca_181624-2920.webp" class="card-img-top" alt=”…”>
+						<div class="card-body">
+							<h5 class="card-title">Drinques para animar sua viagem!</h5> </div>
+					</div>
+				</section>
+			</article>
+			<article>
+				<!-- Title Section Starts -->
+				<div class="title-text container">
+					<h3>Durma com os anjos!</h3>
+					<h4>Os melhores hotéis no centro de São Paulo</h4> </div>
+				<!-- Title Section Ends -->
+				<section class="container d-flex align-items-center">
+					<div class="card"> <img src="image/mercure-quarto.jpg" class="card-img-top rounded" alt="Imagem do hotel Mercure Sao Paulo Pamplona">
+						<div class=”card-body”>
+							<h5 class=”card-title”>Mercure Sao Paulo Pamplona</h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </div>
+					</div>
+					<div class="card"> <img alt="Imagem do hotel ibis Styles Sao Paulo Anhembi 3 estrelas " src="image/ibis-quarto.jpg" class="card-img-top rounded" />
+						<div class=”card-body”>
+							<h5 class=”card-title”> Ibis Styles SP Anhembi</h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </div>
+					</div>
+					<div class="card"> <img src="image/novotel.jpg" class="card-img-top rounded" alt="Imagem do hotel Novotel">
+						<div class=”card-body”>
+							<h5 class=”card-title”>Novotel SP Jardins</h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </div>
+					</div>
+					<div class="card"> <img src="image/ibis-tatuapé.jpg" class="card-img-top rounded" alt="Imagem so hotel ibis São Paulo Tatuapé">
+						<div class=”card-body”>
+							<h5 class=”card-title”>Ibis SP Tatuapé</h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </div>
+					</div>
+				</section>
+			</article>			
       <article>
-        <section class="container my-4 p-4 d-flex align-items-center ">
-          <div class="card">
-            <img src="https://r-xx.bstatic.com/xdata/images/city/250x250/350118.jpg?k=af05cd70ed75f318e9ee0d7a89e08c63cdbc0cb4ded5f322897f0636bde44ef3&o=" class=”card-img-top” alt="Imagem de Arraial do Cabo">
-            <div class=”card-body”>
-              <h5 class=”card-title”>Arraial do Cabo</h5>
+				<!-- Title Section Starts -->
+				<div class="title-text container">
+					<h3>Hospedagens melhor classificadas</h3>
+					<h4>Hoteís próximos ao aeroporto de São Paulo</h4> </div>
+				<!-- Title Section Ends -->
+				<section class="container d-flex align-items-center">
+					<div class="card"> <img alt="Imagem do hotel ibis Styles Sao Paulo Anhembi 3 estrelas " src="image/ibis-quarto.jpg" class="card-img-top rounded" />
+						<div class=”card-body”>
+							<h5 class=”card-title”> Ibis Styles SP Anhembi</h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </div>
+					</div>
+          <div class="card"> <img src="image/mercure-quarto.jpg" class="card-img-top rounded" alt="Imagem do hotel Mercure Sao Paulo Pamplona">
+						<div class=”card-body”>
+							<h5 class=”card-title”>Mercure Sao Paulo Pamplona</h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </div>
+					</div>
+					<div class="card"> <img src="image/ibis-tatuapé.jpg" class="card-img-top rounded" alt="Imagem so hotel ibis São Paulo Tatuapé">
+						<div class=”card-body”>
+							<h5 class=”card-title”>Ibis SP Tatuapé</h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </div>
+					</div>
+          <div class="card"> <img src="image/novotel.jpg" class="card-img-top rounded" alt="Imagem do hotel Novotel">
+						<div class=”card-body”>
+							<h5 class=”card-title”>Novotel SP Jardins</h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </div>
+					</div>
+				</section>
+			</article>
+			<article class="history-bg">
+				<section class="history container d-flex">
+					<div class="title">
+						<h2>Conheça mais sobre a história dos seus locais favoritos</h2>
+						<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ullam hic. Autem esse reiciendis accusantium nobis inventore?</h4> </div>
+					<div class="history card"> <img src="image/ipanema.jpg" class="card-img-top rounded" alt="Imagem de Ipanema">
+						<div class=”card-body”>
+							<h3 class=”card-title”>Ipanema</h3> </div>
+					</div>
+					<div class="card"> <img alt="Imagem de um canhão" src="image/caption.jpg" class="card-img-top rounded" />
+						<div class=”card-body”>
+							<h3 class=”card-title”>Curitiba</h3> </div>
+					</div>
+				</section>
+				<!-- Cards Section Ends -->
+			</article>
+			<!-- Footer -->
+			<footer class="text-center text-lg-start text-white">
+				<!-- Grid container -->
+				<div class="container p-4 pb-0">
+					<!-- Section: Links -->
+					<section class="">
+						<!--Grid row-->
+						<div class="row">
+							<!-- Grid column -->
+							<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+								<h6 class="text-uppercase mb-4 font-weight-bold">
+              Projeto Traveller
+            </h6>
+								<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis recusandae dicta ex tempore possimus rerum ipsam quidem. A consequuntur quidem labore odit debitis veritatis, sed assumenda rem accusantium reiciendis velit! </p>
+							</div>
+							<!-- Grid column -->
+							<hr class="w-100 clearfix d-md-none" />
+							<!-- Grid column -->
+							<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+								<h6 class="text-uppercase mb-4 font-weight-bold">Seções populares</h6>
+								<p> <a class="text-white">Hospedagem</a> </p>
+								<p> <a class="text-white">Gastronomia</a> </p>
+								<p> <a class="text-white">Dicas úteis</a> </p>
+								<p> <a class="text-white">Entretenimento</a> </p>
+							</div>
+							<!-- Grid column -->
+							<hr class="w-100 clearfix d-md-none" />
+							<!-- Grid column -->
+							<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+								<h6 class="text-uppercase mb-4 font-weight-bold">
+              Links úteis
+            </h6>
+								<p> <a class="text-white">Login</a> </p>
+								<p> <a class="text-white">Conheça nosso projeto!</a> </p>
+								<p> <a class="text-white">Ajuda</a> </p>
+							</div>
+							<!-- Grid column -->
+							<hr class="w-100 clearfix d-md-none" />
+							<!-- Grid column -->
+							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+								<h6 class="text-uppercase mb-4 font-weight-bold">Contato</h6>
+								<p><i class="fas fa-home mr-3"></i> São Paulo, SP, BR</p>
+								<p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+								<p><i class="fas fa-phone mr-3"></i>+55 11 98765 4322</p>
+								<p><i class="fas fa-print mr-3"></i>+55 11 98765 4321</p>
+							</div>
+							<!-- Grid column -->
+						</div>
+						<!--Grid row-->
+					</section>
+					<!-- Section: Links -->
+					<hr class="my-3">
+					<!-- Section: Copyright -->
+					<section class="p-3 pt-0">
+						<div class="row d-flex align-items-center">
+							<!-- Grid column -->
+							<div class="col-md-7 col-lg-8 text-center text-md-start">
+								<!-- Copyright -->
+								<div class="p-3"> © 2022 Copyright: <a class="text-white" href="#">Projeto Gulliver Traveller</a
+                >
             </div>
+            <!-- Copyright -->
           </div>
-          <div class="card">
-            <img alt="" src="https://q-xx.bstatic.com/xdata/images/city/250x250/653621.jpg?k=7d0330a52ee7350d5d38c6cbdf7349f4798889706117e38e74f04e631e09b31b&o=" class=”card-img-top”/>
-            <div class=”card-body”>
-              <h5 class=”card-title”>Porto de Galinhas</h5>
-            </div>
-          </div>
-          <div class="card">
-           <img src="https://q-xx.bstatic.com/xdata/images/city/250x250/653641.jpg?k=29b8706ee4bff7b870ca35a698c5ac4be003b4122b00035a9d4a572d3101b1fe&o=" class=”card-img-top” alt=”…”> 
-            <div class=”card-body”>
-              <h5 class=”card-title”>Rio de Janeiro</h5>
-            </div>
-          </div>
-          <div class="card">
-            <img src="https://r-xx.bstatic.com/xdata/images/city/250x250/653646.jpg?k=0a8eb3999748f5b12b29f6bd5492a12b7f15a37535e572ea91403098d1588d38&o=" class=”card-img-top” alt=”…”>
-            <div class=”card-body”>
-              <h5 class=”card-title”>São Paulo</h5>
-            </div>
-          </div>
-        </section>
+          <!-- Grid column -->
 
-      </article>
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+									<!-- Twitter --><a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-twitter"></i
+              ></a>
+									<!-- Google --><a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-google"></i
+              ></a>
+									<!-- Instagram --><a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i
+              ></a> </div>
+								<!-- Grid column -->
+							</div>
+					</section>
+					<!-- Section: Copyright -->
+					</div>
+					<!-- Grid container -->
+			</footer>
+			<!-- Footer -->
+	</main>
+</body>
 
-    </main>
-  </body>
 </html>

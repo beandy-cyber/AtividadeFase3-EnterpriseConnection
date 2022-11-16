@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato:wght@300;400;700;900&display=swap');
 
 body {
-  font-family: 'Lato',sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.125rem;
+  background-color: #eee;
+}
+
+header {
+  box-sizing: border-box;
+  background-color: #061E50;
+}
+
+header a {
+  color: #FADF64;
+}
+
+header .login {
+  color: #FAA664;
+}
+
+header a:hover {
+  color: #E38438;
+  text-decoration: none;
 }
 
 .navbar {
@@ -10,18 +29,17 @@ body {
 }
 
 .logo {
-  font-family: 'Comfortaa',cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 2.25rem;
   font-weight: 900;
-  color: #000;
 }
 
 .nav-item {
   font-size: 1.375rem;
 }
 
-.container {
-  margin-top: 5rem;
+html body main div.container {
+  margin-top: 10rem;
 }
 
 .menu-content {
@@ -30,15 +48,19 @@ body {
 
 .btn-light {
   display: inline-block;
-  font-family: 'comfortaa', sans-serif;
-  font-size: 1.10rem;
+  font-size: 1.20rem;
   padding: .8rem;
   margin: .2rem;
   width: 14rem;
   text-align: center;
   background-color: transparent;
-  border: .1rem solid #000;
+  border: .1rem solid #061E50;
   box-sizing: border-box;
+}
+
+.btn-light:hover {
+  background-color: #C46315;
+  color: #eee;
 }
 
 .button-borda-left {
@@ -51,19 +73,104 @@ body {
 
 .embed-responsive-21by9 {
   height: 20rem;
-}
-
-.form-control {
-  width: 16rem;
+  margin-top: 4rem;
 }
 
 .card {
   margin-right: 1rem;
   width: 20rem;
-  height: 19rem;
+  background-color: transparent;
+  border: none;
+}
+
+html body main div.title-text {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-weight: 700;
 }
 
 h5 {
   padding: .5rem;
-  font-size: 1.30rem;
+  padding-left: 0;
+  font-size: 1.20rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.20rem;
+  font-weight: 400;
+  padding-top: .3rem;
+}
+
+i {
+  color: #061E50;
+}
+
+html body main article article.dicas {
+  margin-top: 5rem;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+  box-sizing: border-box;
+}
+
+html body main article article.dicas section {
+  align-items: center;
+  justify-content: space-between;
+  height: 24rem;
+}
+
+html body main article article.dicas div.title-text {
+  text-align: center;
+}
+
+html body main article article.dicas section .card {
+  width: 30rem;
+  background-color: #fff;
+}
+
+html body main article article.dicas section .card-title {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+article.history-bg {
+  margin-top: 5rem;
+  padding-top: .1rem;
+  height: 27rem;
+  background-color: #faa56488;
+}
+
+article.history-bg .card {
+  width: 40rem;
+}
+
+section.history.container {
+  margin-top: 4rem;
+}
+
+section.history.container div.title h2 {
+  text-justify: auto;
+  padding-right: .5rem;
+  font-weight: 700;
+}
+
+section.history.container h3 {
+  font-weight: 400;
+}
+
+footer {
+  background-color: #0D2B6B;
+}
+
+footer p,
+footer h6 {
+  text-align: left;
+}
+
+footer p i,
+footer a i {
+  color: #4D6AA7;
 }
