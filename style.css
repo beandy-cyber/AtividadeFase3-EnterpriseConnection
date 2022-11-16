@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+  font-family: 'Lato',sans-serif;
+  font-size: 1.125rem;
+}
+
+.navbar {
+  position: relative;
+}
+
+.logo {
+  font-family: 'Comfortaa',cursive;
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #000;
+}
+
+.nav-item {
+  font-size: 1.375rem;
+}
+
+.container {
+  margin-top: 5rem;
+}
+
+.menu-content {
+  justify-content: space-between;
+}
+
+.btn-light {
+  display: inline-block;
+  font-family: 'comfortaa', sans-serif;
+  font-size: 1.10rem;
+  padding: .8rem;
+  margin: .2rem;
+  width: 14rem;
+  text-align: center;
+  background-color: transparent;
+  border: .1rem solid #000;
+  box-sizing: border-box;
+}
+
+.button-borda-left {
+  margin-left: 0;
+}
+
+.button-borda-right {
+  margin-right: 0;
+}
+
+.embed-responsive-21by9 {
+  height: 20rem;
+}
+
+.form-control {
+  width: 16rem;
+}
+
+.card {
+  margin-right: 1rem;
+  width: 20rem;
+  height: 19rem;
+}
+
+h5 {
+  padding: .5rem;
+  font-size: 1.30rem;
+}
