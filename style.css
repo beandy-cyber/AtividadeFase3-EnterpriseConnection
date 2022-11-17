@@ -170,6 +170,10 @@ footer h6 {
   text-align: left;
 }
 
+footer h6 {
+  color: #FADF64;
+}
+
 footer p i,
 footer a i {
   color: #4D6AA7;
