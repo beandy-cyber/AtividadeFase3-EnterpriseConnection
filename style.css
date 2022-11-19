@@ -8,15 +8,18 @@ body {
 
 header {
   box-sizing: border-box;
-  background-color: #061E50;
+  background-color: #eee;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.363);
 }
 
 header a {
-  color: #FADF64;
+  color: #061E50;
 }
 
 header .login {
-  color: #FAA664;
+  background-color: #061E50;
+  border-radius: 25px;
+  color: #fff;
 }
 
 header a:hover {
@@ -162,7 +165,7 @@ section.history.container h3 {
 }
 
 footer {
-  background-color: #0D2B6B;
+  background-color: #061E50;
 }
 
 footer p,
